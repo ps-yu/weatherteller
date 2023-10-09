@@ -1,15 +1,16 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./compnents/navbar";
-import "./App.css"
+import "./App.css";
+import Astronomy from "./compnents/astronomy";
 
 function App() {
-  return(
+  return (
     <div className="master-app">
-      <Navbar />
+      <Navbar city="toronto" />
+      <Astronomy />
     </div>
-
-  ) 
+  );
 }
 
 export default App;

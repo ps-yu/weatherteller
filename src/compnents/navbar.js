@@ -1,12 +1,12 @@
 import React from "react";
 import "./navbar.css";
 
-function Navbar() {
+function Navbar(props) {
   return (
       <div className="navbar-main">
-        <div>Current City</div>
+        <div>My Location: {props.city}</div>
         <div id="logo">Weather Teller </div>
-        <div>searchbox</div>
+        <div> searchbox </div>
       </div>
   );
 }
