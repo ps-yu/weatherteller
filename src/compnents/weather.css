@@ -1,0 +1,43 @@
+/* Weather App Container */
+.weather-app {
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+}
+
+/* Heading Style */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Input Field Style */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Weather Information Style */
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Loading Text Style */
+p:empty {
+  color: #888;
+  font-style: italic;
+}
