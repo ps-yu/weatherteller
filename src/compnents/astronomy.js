@@ -37,13 +37,17 @@ Async function to make the network call to get the astronomical data
   // }
 
   return (
+    <>
     <div className="astroCard">
+      <div id="title"> Astronomy </div>
       <div> Sunrise Image </div>
       <div> Sunset</div>
       <div> Moonrise</div>
       <div> Moonset</div>
       <div> Moonphase</div>
-    </div>
+    </div>    
+    </>
+
   );
 }
 

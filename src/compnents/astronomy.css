@@ -1,14 +1,19 @@
 .astroCard{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
+  margin-top: 120px;
   font-size: 20px;
-  color:aqua;
+  color:rgb(13, 13, 13);
   border-style: solid;
-  border-width: 1px;
-  border-color: aqua;
-  margin-left: 300px;
-  margin-right: 300px;
-  height: 100vh
+  border-width: 4px;
+  border-color: rgb(9, 9, 9);
+  background-color:cornflowerblue;
+  font-family: cursive;
+  font-weight: bold;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+}
+ #title{
+  font-size: 30px;
 }
