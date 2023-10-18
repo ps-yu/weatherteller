@@ -6,10 +6,11 @@ const SearchBar = () => {
   States to change the location in the weather app
   */
 
-  const [location, setLocation] = useState("paris");
-  const [geoLocation, setGeoLocation] = useState("48.8567,2.3508")
+  const [location, setLocation] = useState("");
+  //Toronto is the default location of the App.
+  const [endPoint, setEndPoint] = useState("toronto-ontario-canada")
 
-  const url = `https://weatherapi-com.p.rapidapi.com/search.json?q=${geoLocation}`;
+  const url = `https://weatherapi-com.p.rapidapi.com/search.json?q=${endPoint}`;
   const options = {
     method: "GET",
     headers: {
@@ -19,20 +20,24 @@ const SearchBar = () => {
   }; 
   
   /*
-  State to update the search parameter
-  */
-  // const [searchInput, setSearchInput] = useState("");
+
   
 
   /*
-  function to handle the searchbox searchInput
+  function to handle the drop down menu
   */
   async function clickHandler(e){
    e.preventDefault();
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      console.log(result[0])
+      for (let i in result){
+        if (result[i].country === 'Canada'){
+          setEndPoint(result[i].url);
+        }else {
+          setEndPoint("toronto-ontario-canada");
+        }
+      }
     }
     catch(error){
       console.log(error);
