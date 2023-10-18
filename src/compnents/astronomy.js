@@ -1,5 +1,5 @@
 import React from "react";
-import "./astronomy.css";
+import "./Card.css";
 // import rapidapiinfo from "../rapidapiinfo";
 
 /* Astronomy end point allows the user to get the upto date information about sunrise, sunset, moonrise, moonset, moonphase and illumination */
@@ -25,7 +25,8 @@ useEffect hook to get the astronomical data when the component renders for the f
   /* 
 Async function to make the network call to get the astronomical data
 */
-  // async function clickHandler(){
+  // async function clickHandler(e){
+  //  e.preventDefault();
   //   try {
   //     const response = await fetch(url, options);
   //     const result = await response.json();
@@ -38,7 +39,7 @@ Async function to make the network call to get the astronomical data
 
   return (
     <>
-    <div className="astroCard">
+    <div className="Card">
       <div id="title"> Astronomy </div>
       <div> Sunrise Image </div>
       <div> Sunset</div>

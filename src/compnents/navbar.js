@@ -1,4 +1,5 @@
 import React from "react";
+import SearchBar from "./SearchBar";
 import "./navbar.css";
 
 function Navbar(props) {
@@ -6,7 +7,7 @@ function Navbar(props) {
       <div className="navbar-main">
         <div>My Location: {props.city}</div>
         <div id="logo">Weather Teller </div>
-        <div> searchbox </div>
+        <SearchBar />
       </div>
   );
 }
