@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="master-app">
       <Navbar city="toronto" />
-      <Astronomy className="astronomy.css"/>
+      <Astronomy />
     </div>
   );
 }
