@@ -14,3 +14,7 @@
   font-size: larger;
   color:rgb(13, 14, 14);
 }
+.dropDown{
+  display: flex;
+  justify-content: space-between;
+}

@@ -14,11 +14,12 @@ function App() {
   const [location, setLocation] = useState("Toronto");
   function changeLocation(city) {
     setLocation(city);
+    console.log("Location Changed")
   }
 
   return (
     <div className="master-app">
-      <Navbar city= {location} />
+      <Navbar city= {location} changeLocation={changeLocation} />
       <Astronomy />
     </div>
   );
