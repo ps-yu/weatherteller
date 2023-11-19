@@ -4,7 +4,6 @@ import Navbar from "./compnents/navbar";
 import "./App.css";
 import Astronomy from "./compnents/astronomy";
 
-
 function App() {
 
   /**
@@ -19,7 +18,7 @@ function App() {
 
   return (
     <div className="master-app">
-      <Navbar city= {location} changeLocation={changeLocation} />
+      <Navbar city={location} changeLocation={changeLocation} />
       <Astronomy />
     </div>
   );

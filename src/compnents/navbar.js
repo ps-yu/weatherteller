@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import rapidapiinfo from "../rapidapiinfo";
+import rapidapiinfo from "./rapidapiinfo";
 
 function Navbar(props) {
   const [selectedOption, setSelectedOption] = useState("option1");
